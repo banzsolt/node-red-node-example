@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('symbol-filter',{
+        category: 'Starfish',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "face.png",
+        label: function() {
+            return this.name||"symbol-filter";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="symbol-filter">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> SymbolList</label>
+        <input type="text" id="node-input-name" placeholder="SymbolList">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="symbol-filter">
+    <p>Filter data to allow through only the SymbolList</p>
+</script>

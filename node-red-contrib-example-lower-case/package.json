@@ -1,0 +1,16 @@
+{
+  "name": "node-red-contrib-demo",
+  "version": "1.0.0",
+  "description": "first node red test",
+  "author": "Zsolt Ban",
+  "license": "ISC",
+  "keywords": [ "node-red" ],
+  "node-red" : {
+    "nodes": {
+        "symbol-filter": "market-data-nodes/symbol-filter.js",
+        "trayport-level3-real-time-stream": "stream-nodes/trayport-level3-real-time-stream.js",
+        "to-console": "render-nodes/to-console.js",
+        "order-book-sim": "market-data-nodes/order-book-sim.js"
+    }
+  }
+}

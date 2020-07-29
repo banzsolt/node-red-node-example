@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('to-console',{
+        category: 'Starfish',
+        color: '#C0DEED',
+        defaults: {
+            name: {value:""}
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "face.png",
+        label: function() {
+            return this.name||"to-console";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="to-console">
+    <!--<div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> SymbolList</label>
+        <input type="text" id="node-input-name" placeholder="SymbolList">
+    </div>-->
+</script>
+
+<script type="text/html" data-help-name="to-console">
+    <p>Renders the object to Console</p>
+</script>
